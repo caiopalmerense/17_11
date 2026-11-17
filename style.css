@@ -1,0 +1,140 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eef2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #1b4965;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header-title {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.header-subtitle {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* Container central */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.form-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Caixa de Introdução */
+.intro-box {
+    border-top: 4px solid #1b4965;
+}
+
+.intro-box h2, .form-section h2 {
+    color: #1b4965;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.intro-box p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.link-descer {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1b4965;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.link-descer:hover {
+    color: #2b7a78;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    padding: 8px 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: #1b4965;
+    outline: none;
+}
+
+/* Botão de Envio */
+.btn-submit {
+    background-color: #2b7a78;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #17252a;
+}
+.footer {
+    background-color: #1b4965;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+}
+
+/* Responsividade para celular */
+@media (max-width: 600px) {
+    .header-title {
+        font-size: 22px;
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+}
