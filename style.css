@@ -33,9 +33,18 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.intro-box h2, .form-section h2 {
+.intro-box h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.form-section h2 {
     font-size: 18px;
     color: #2c3e50;
     margin-top: 0;
@@ -44,19 +53,21 @@ body {
 .intro-box p {
     font-size: 14px;
     line-height: 1.4;
+    margin: 0;
 }
 
 .link-descer {
     color: #2980b9;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-label {
-    display: block;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -67,6 +78,7 @@ body {
     padding: 8px;
     border: 1px solid #999;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 .form-select {
@@ -74,6 +86,7 @@ body {
     padding: 8px;
     border: 1px solid #999;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 .form-textarea {
@@ -81,6 +94,7 @@ body {
     padding: 8px;
     border: 1px solid #999;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 .btn-submit {
@@ -93,6 +107,11 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+
+.btn-submit:hover {
+    background-color: #219653;
+}
+
 .footer {
     background-color: #2c3e50;
     color: white;
@@ -100,12 +119,9 @@ body {
     padding: 10px;
     font-size: 12px;
 }
-@media (max-width: 600px) {
-    .header-title {
-        font-size: 22px;
-    }
 
-    .form-section {
-        padding: 15px;
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
     }
 }
